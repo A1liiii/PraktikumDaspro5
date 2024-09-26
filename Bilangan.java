@@ -7,10 +7,7 @@ public class Bilangan {
         System.out.print("masukkan angka : ");
         int angka = bil.nextInt();
 
-        if (angka % 2 == 0) {
-            System.out.println("angka "+angka+" adalah genap");
-        } else {
-            System.out.println("angka "+angka+" adalah ganjil");
-        }
+        String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
+        System.out.println("angka " + angka + " adalah bilangan " + hasil + ".");
     }
 }
