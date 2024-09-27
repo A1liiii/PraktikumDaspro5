@@ -1,34 +1,30 @@
 package meet5;
 import java.util.Scanner;
 
-public class PemilihanBilangan15 {
+public class PemilihanHari15 {
     public static void main(String[] args) {
         Scanner day = new Scanner(System.in);
-        System.out.print("masukan hari (dalam bahasa inggris ) : ");
-        String dayname = day.nextLine().toLowerCase();
+        System.out.print("Masukkan nama hari (dalam bahasa Inggris): ");
+        String dayName = day.next().toLowerCase();
 
-        String daytype;
-
-        switch (dayname) {
+        String dayType;
+        switch (dayName) {
             case "monday":
             case "tuesday":
             case "wednesday":
             case "thursday":
             case "friday":
-                daytype = "Weekday";
+                dayType = "Weekday";
                 break;
             case "saturday":
             case "sunday":
-                daytype = "Weekend";
+                dayType = "Weekend";
                 break;
             default:
-                daytype = "Invalid";
+                dayType = "Invalid";
                 break;
         }
-
-        System.out.println("hari "+dayname+" adalah "+daytype+".");
-
-        day.close();
+        System.out.println("Hari " + dayName + " adalah " + dayType + ".");
 
     }
 }
